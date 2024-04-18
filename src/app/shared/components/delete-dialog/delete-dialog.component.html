@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>¿Estás seguro de eliminar esta comida: {{food.name}}?</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Esta acción no se puede deshacer</h3>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button [mat-dialog-close]="true" [color]="'warn'">Borrar</button>
+</mat-dialog-actions>
